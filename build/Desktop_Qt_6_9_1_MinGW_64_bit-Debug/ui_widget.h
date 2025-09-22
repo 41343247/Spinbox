@@ -32,18 +32,18 @@ public:
         Widget->resize(800, 600);
         spinBox = new QSpinBox(Widget);
         spinBox->setObjectName("spinBox");
-        spinBox->setGeometry(QRect(70, 230, 42, 22));
+        spinBox->setGeometry(QRect(40, 110, 42, 22));
         spinBox->setMinimum(-100);
         spinBox->setMaximum(100);
         horizontalSlider = new QSlider(Widget);
         horizontalSlider->setObjectName("horizontalSlider");
-        horizontalSlider->setGeometry(QRect(120, 230, 160, 22));
+        horizontalSlider->setGeometry(QRect(90, 110, 160, 22));
         horizontalSlider->setMinimum(-100);
         horizontalSlider->setMaximum(100);
         horizontalSlider->setOrientation(Qt::Orientation::Horizontal);
         lcdNumber = new QLCDNumber(Widget);
         lcdNumber->setObjectName("lcdNumber");
-        lcdNumber->setGeometry(QRect(70, 200, 64, 23));
+        lcdNumber->setGeometry(QRect(40, 80, 64, 23));
 
         retranslateUi(Widget);
         QObject::connect(spinBox, &QSpinBox::valueChanged, horizontalSlider, &QSlider::setValue);
